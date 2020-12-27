@@ -4,7 +4,7 @@ A Line bot based on a finite state machine
 
 Bot Description: a bot that give recommendation for the genre of music the user would like to listen to according to his/her mood
 
-## Setup
+## Bot 
 
 ### Prerequisite
 * Python 3.6
