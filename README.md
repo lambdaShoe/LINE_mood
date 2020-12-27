@@ -7,17 +7,17 @@ A Line bot based on a finite state machine
 
 ## Usage
 
-1. insert 'mood' , and choose your current mood
+### insert 'mood' , and choose your current mood
 
 ![shot_2](./img/shot_2.jpg)
 
-2. there are more choices in different mood
+### there are more choices in different mood
 ![shot_1](./img/shot_1.jpg)
 
-3. choose your favourite artist
+### choose your favourite artist
 ![shot_3](./img/shot_3.jpg)
 
-4. and we will recommend you the appropriate genre of music for you to listen to
+### and we will recommend you the appropriate genre of music for you to listen to
 ![shot_4](./img/shot_4.jpg)
 
 ## Finite State Machine
