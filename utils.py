@@ -1,8 +1,7 @@
 import os
 
 from linebot import LineBotApi, WebhookParser
-from linebot.models import MessageEvent, TextMessage, TextSendMessage
-
+from linebot.models import MessageEvent, TextMessage, TextSendMessage, ImageSendMessage
 
 channel_access_token = os.getenv("LINE_CHANNEL_ACCESS_TOKEN", None)
 
@@ -13,19 +12,18 @@ def send_text_message(reply_token, text):
 
     return "OK"
 
-"""
+
 def send_fsm(reply_token):
     line_bot_api.reply_message(
         reply_token,
         ImageSendMessage(
-            original_content_url="https://lh3.googleusercontent.com/pw/ACtC-3dv0dTn-45EryPyNIWrarZAj0aD35QyV0CPNu1nTkQP1tdY5q8EvpGFuJFegz9Pkr0Le8pe6p2kNcXvHwLPAlOVJ1YvnuTlAeZoSGTwb50NGKfksvFIiYalFEEfBCssWHwDFYIl5xC_3cQn_4Ls0GE=w2258-h772-no?authuser=2",
-            preview_image_url="https://lh3.googleusercontent.com/pw/ACtC-3dv0dTn-45EryPyNIWrarZAj0aD35QyV0CPNu1nTkQP1tdY5q8EvpGFuJFegz9Pkr0Le8pe6p2kNcXvHwLPAlOVJ1YvnuTlAeZoSGTwb50NGKfksvFIiYalFEEfBCssWHwDFYIl5xC_3cQn_4Ls0GE=w2258-h772-no?authuser=2",
-            quick_reply=QuickReply(items=[QuickReplyButton(action = MessageAction(label='回到「選單」', text='選單'))])
+            original_content_url="https://lh3.googleusercontent.com/a3Jq3uXkYONmdUr3JDum1r_pTerMclSbD4J_-EMPNWq_vM5h6Y1Ai80XeeUaaHsoeZ6K5PBP3ZgcE3cDMFGgHqu9CvX5p8DTKMyU7YLKyHU30lwazspTrGXnWrLhAQ0plQjgB0hL9aEikghdmq_74nSydtOwp-WTmauKezaxdToOmbFn7-E-bfO582rrOnNCRnAKnylIv_UzheIcScpAQKCiVRq9W3fp_ENA6eUJmHDVfj1uFHVMksT3O9mQh21r-lKvdNTORoDJvk4wCzH02lnEdv0wKB1udPh4e1hZ3p1wVygjGrVZhr2BXlbTBUdkqJf-2qMiQrNauPgxypDM8nPcJE59Y5jx4hp6EHkcMoMtpVK9n53C4ht6Bkf5dwW2FPbhH6MGU8Hw6ueGweOPzj8-V1JbvnNFLcwr5J-vHpUST-Ycf5gLm5qAJC-dV-7eNkDJ57DdLsRieMfdOj0Wcmdpna_53lEAO3FbruqURDmglbyfzKykrK_WeXFI4HIDFGJevts6hTpa0VqymbnN-_JSOexwa1SNo-7927TSU9zopv2HszRdsJ3_Etu94OWyT8nwa5zgkU8E44shAp27t88ptB2Jx_ZQN_EAjL_fcf6TDev7J6PpVlnI6MmZ7xh7_-Lyl4FXi80XBBqaQDo4d55Zi1xfohtsPs1iokDQNXQWyqjRoIJdcMvWLYXn=w1423-h943-no?authuser=0",
+            preview_image_url="https://lh3.googleusercontent.com/a3Jq3uXkYONmdUr3JDum1r_pTerMclSbD4J_-EMPNWq_vM5h6Y1Ai80XeeUaaHsoeZ6K5PBP3ZgcE3cDMFGgHqu9CvX5p8DTKMyU7YLKyHU30lwazspTrGXnWrLhAQ0plQjgB0hL9aEikghdmq_74nSydtOwp-WTmauKezaxdToOmbFn7-E-bfO582rrOnNCRnAKnylIv_UzheIcScpAQKCiVRq9W3fp_ENA6eUJmHDVfj1uFHVMksT3O9mQh21r-lKvdNTORoDJvk4wCzH02lnEdv0wKB1udPh4e1hZ3p1wVygjGrVZhr2BXlbTBUdkqJf-2qMiQrNauPgxypDM8nPcJE59Y5jx4hp6EHkcMoMtpVK9n53C4ht6Bkf5dwW2FPbhH6MGU8Hw6ueGweOPzj8-V1JbvnNFLcwr5J-vHpUST-Ycf5gLm5qAJC-dV-7eNkDJ57DdLsRieMfdOj0Wcmdpna_53lEAO3FbruqURDmglbyfzKykrK_WeXFI4HIDFGJevts6hTpa0VqymbnN-_JSOexwa1SNo-7927TSU9zopv2HszRdsJ3_Etu94OWyT8nwa5zgkU8E44shAp27t88ptB2Jx_ZQN_EAjL_fcf6TDev7J6PpVlnI6MmZ7xh7_-Lyl4FXi80XBBqaQDo4d55Zi1xfohtsPs1iokDQNXQWyqjRoIJdcMvWLYXn=w1423-h943-no?authuser=0"
             )
         )
     return "OK"
 
-
+"""
 def send_image_url(id, img_url):
     pass
 
