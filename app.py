@@ -19,13 +19,13 @@ machine = TocMachine(
             "EDM" , "Rock" , "Rap" , "Metal" , "Fusion" , "Classic" , "Jazz" ,
             "Soul","mood","fsm"],
     transitions=[
-	{
+    {
             "trigger": "advance",
             "source": "*",
             "dest": "mood",
             "conditions": "is_going_to_mood",
         },
-	{
+        {
             "trigger": "advance",
             "source": "*",
             "dest": "fsm",
@@ -73,13 +73,13 @@ machine = TocMachine(
             "dest": "travel",
             "conditions": "is_going_to_travel",
         },
-	{
+    {
             "trigger": "advance",
             "source": "sad",
             "dest": "little_sad",
             "conditions": "is_going_to_little_sad",
         },
-	{
+    {
             "trigger": "advance",
             "source": "sad",
             "dest": "very_sad",
@@ -127,19 +127,19 @@ machine = TocMachine(
             "dest": "Fusion",
             "conditions": "is_going_to_Fusion",
         },
-	{
+    {
             "trigger": "advance",
             "source": "wine",
             "dest": "Classic",
             "conditions": "is_going_to_Classic",
         },
-	{
+    {
             "trigger": "advance",
             "source": "wine",
             "dest": "Jazz",
             "conditions": "is_going_to_Jazz",
         },
-	{
+    {
             "trigger": "advance",
             "source": "wine",
             "dest": "Soul",
